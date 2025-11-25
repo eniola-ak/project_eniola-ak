@@ -1,0 +1,40 @@
+training:
+  n_epochs: 10
+  batch_size: 8
+  learning_rate: 0.001
+  device: "cuda"
+  experiment_name: "baseline"
+
+model:
+  latent_dim: 16
+  embedding_dim: 16
+  gru_hidden_dim: 16
+  num_layers: 1
+  dropout: 0.1
+  
+  #Cross-Modal Attention
+  use_cross_modal_attention: false
+  
+  #Variational Decoder
+  use_vae_decoder: false
+
+data:
+  image_height: 60
+  image_width: 125
+  text_max_length: 120
+  train_split: 0.8
+
+loss:
+  image_weight: 1.0
+  text_weight: 1.0
+  context_weight: 0.2
+  kl_weight: 0.01
+
+paths:
+  project_root: "/content/gdrive/MyDrive/project_eniola-ak"
+  checkpoint_dir: "checkpoints"
+  results_dir: "results"
+
+logging:
+  save_every_n_epochs: 1
+  save_visualizations: true
