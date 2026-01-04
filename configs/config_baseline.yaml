@@ -28,7 +28,7 @@ loss:
 
 paths:
   project_root: "/content/gdrive/MyDrive/project_eniola-ak"
-  checkpoint_dir: "checkpoints"
+  checkpoint_dir: "checkpoints/baseline"
   results_dir: "results/baseline"
 
 logging:

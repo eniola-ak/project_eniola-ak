@@ -1,0 +1,30 @@
+Comparison Table:
+============================================================
+Experiment                     Image MAE       Image MSE       Text Perplexity 
+cross_modal_plus_vae           0.241443        0.078763        46.242467      
+with_cross_modal_attention     0.241406        0.078778        38.490519      
+baseline                       0.241272        0.078956        66.529607      
+with_vae_decoder               0.241421        0.078769        45.266454      
+
+Improvement Analysis:
+
+Baseline reference:
+  Image MAE: 0.241272
+  Text Perplexity: 66.529607
+
+Improvement vs Baseline:
+
+cross_modal_plus_vae:
+  Image MAE: +0.07%
+  Text Perplexity: -30.49%
+  Image MSE: -0.24%
+
+with_cross_modal_attention:
+  Image MAE: +0.06%
+  Text Perplexity: -42.15%
+  Image MSE: -0.23%
+
+with_vae_decoder:
+  Image MAE: +0.06%
+  Text Perplexity: -31.96%
+  Image MSE: -0.24%

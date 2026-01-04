@@ -1,0 +1,2 @@
+experiment_name,timestamp,n_epochs,batch_size,learning_rate,use_cross_modal_attention,use_vae_decoder,kl_weight,latent_dim,embedding_dim,gru_hidden_dim,image_weight,text_weight,context_weight,final_training_loss,image_mae,image_mse,text_perplexity
+cross_modal_plus_vae,2026-01-02T13:10:12.978338,50,8,0.001,True,True,0.01,256,768,256,0.2,10.0,1,10.590240859011873,0.2414428865074352,0.07876295079091553,46.24246718358023
