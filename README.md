@@ -196,11 +196,16 @@ Disk space: ~15GB (dataset + checkpoints + results)
 1. Open the experiments.ipynb file 
 2. set config path by removing comment
 
+```python
 # CONFIG_NAME = 'configs/config_crossmodal.yaml'   # + Cross-modal
 # CONFIG_NAME = 'configs/config_vae.yaml'          # + VAE
 # CONFIG_NAME = 'configs/config_both.yaml'         # Both 
+```
 
 3. To save time, set the code to load final saved checkpoint and evaluate else train for all epochs by setting RESUME_FROM_CHECKPOINT to False. 
+
+all checkpoints are available at https://drive.google.com/drive/folders/1p4KdoAjkZpSiM44UnRjLFM2ImnIdmLUu?usp=sharing
+
 ```python
 RESUME_FROM_CHECKPOINT = True
 CHECKPOINT_TO_LOAD = "cross_modal_plus_vae_epoch_049.pth"
