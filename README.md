@@ -4,9 +4,7 @@
 ---
 
 ## Introduction and Problem Statement
-This project extends a baseline sequence predictor model for visual storytelling by incorporating advanced deep learning techniques. Given 4 frames with text descriptions, the model must predict the 5th frame (both image and text description).
-
-The impact of each architectural change and the combined architectural changes on the reasoning quality and narrative coherence are evaluated.
+This respository extends a baseline model for visual storytelling by incorporating some deep learning techniques. Given 4 frames with text descriptions, the model is expected to predict the 5th frame (both image and text description).
 
 **Dataset**: https://huggingface.co/datasets/daniel3303/StoryReasoning
 
@@ -54,7 +52,7 @@ class CrossModalAttention(nn.Module):
 
 #### 2. Variational Autoencoder (VAE) Decoder
 
-**Motivation**: The VA decoder allows the model generalize better  by not learning the images directly. Instead, it learns a distribution and uses the distribution samples to generate images to prevent overfitting.
+**Motivation**: The VAE decoder allows the model generalize better  by not learning the images directly. Instead, it learns a distribution and uses the distribution samples to generate images to prevent overfitting.
 
 **Implementation**:
 ```python
@@ -190,7 +188,7 @@ Reducing the image weight acknowledged the architectural limitations of the mode
 
 ## How to reproduce
 Google Colab (recommended) or local GPU
-Disk space: ~15GB (dataset + checkpoints + results)
+Disk space: ~15GB (checkpoints + results)
 
 ### Setup
 1. Open the experiments.ipynb file 
